@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ResidenciApp</string>
+    <string name="fecha">20/03/2020</string>
+    <string name="DescripcionBasura">Hoy pasara el camion de la basura</string>
+    <string name="label_area">Seleccione un área común...</string>
+    <string name="error_loading_areas">Error al cargar las áreas comunes</string>
+    <string name="areas_comunes">Areas Comunes</string>
+</resources>
