@@ -5,4 +5,5 @@
     <string name="label_area">Seleccione un área común...</string>
     <string name="error_loading_areas">Error al cargar las áreas comunes</string>
     <string name="areas_comunes">Areas Comunes</string>
+    <string name="press_back_again">Presione una vez más para salir</string>
 </resources>

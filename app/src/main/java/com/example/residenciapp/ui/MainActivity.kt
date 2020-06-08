@@ -12,8 +12,13 @@ import com.example.residenciapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 import com.example.residenciapp.PreferenceHelper.get
 import com.example.residenciapp.PreferenceHelper.set
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
+
+    private val snackBaR by lazy{
+        Snackbar.make(mainLayout, R.string.press_back_again, Snackbar.LENGTH_SHORT)
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,5 +73,12 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MenuActivity::class.java)
         startActivity(intent)
         finish()
+    }
+
+    override fun onBackPressed() {
+        if(snackBaR.isShown)
+            super.onBackPressed()
+        else
+            snackBaR.show()
     }
 }
